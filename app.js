@@ -7,9 +7,9 @@ function setHeader(e) {
 }
 
 document.getElementById("heading").innerHTML = 
-    localStorage["title"] || "Just Write"; //default text
+    localStorage["title"] || ""; //default text
 document.getElementById("content").innerHTML = 
-    localStorage["text"] || "This text is automatically saved every second :) "; //defualt text
+    localStorage["text"] || ""; //default text
 
 setInterval(function() {
     //function that is saving the InnerHTML of the div
