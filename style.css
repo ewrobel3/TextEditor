@@ -1,4 +1,4 @@
-html {
+  html {
     font-family: "Roboto", sans-serif;
     background-color: #222222;
     height: 100%;
@@ -22,11 +22,13 @@ html {
   #heading {
     font-size: 40px;
     border-bottom: 2px solid #444444;
+    cursor: text;
   }
   
   #content {
     padding-top: 20px;
     font-size: 16px;
+    cursor: text;
   }
 
   [contenteditable][placeholder]:empty:before {
@@ -34,4 +36,8 @@ html {
       position: absolute;
       color: gray;
       background-color: transparent;
+  }
+
+  p::first-line {
+      text-indent: 1cm;
   }
