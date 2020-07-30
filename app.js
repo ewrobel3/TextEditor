@@ -5,3 +5,14 @@ function setHeader(e) {
         document.getElementById("content").focus();
     }
 }
+
+document.getElementById("heading").innerHTML = 
+    localStorage["title"] || "Just Write"; //default text
+document.getElementById("content").innerHTML = 
+    localStorage["text"] || "This text is automatically saved every second :) "; //defualt text
+
+setInterval(function() {
+    //function that is saving the InnerHTML of the div
+    localStorage["title"] = document.getElementById("heading").innerHTML; // heading div
+    localStorage["text"] = document.getElementById("content").innerHTML; // content div
+}, 1000);

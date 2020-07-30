@@ -20,12 +20,13 @@ html {
   }
   
   #heading {
-    font-size: 48px;
+    font-size: 40px;
+    border-bottom: 2px solid #444444;
   }
   
   #content {
-    padding-top: 10px;
-    font-size: 24px;
+    padding-top: 20px;
+    font-size: 16px;
   }
 
   [contenteditable][placeholder]:empty:before {
