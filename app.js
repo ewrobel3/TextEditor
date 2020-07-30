@@ -1,4 +1,4 @@
-document.getElementById("heading").addEventListener("keydown", setHeader);
+document.getElementById("heading").addEventListener("keyup", setHeader);
 
 function setHeader(e) {
     if(e.key==="Enter") {
